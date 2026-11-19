@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNUVqhkT6hRCZHUvafCFG+2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hanaabdulkadil/Abdulkadil_DeadlineDateFormatter/blob/main/Version_2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Activity 2"
+      ],
+      "metadata": {
+        "id": "dhlEPCkZ0p9L"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "7VLmdcmJ0pOn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "gfuv42fw0YIR"
+      },
+      "outputs": [],
+      "source": [
+        "# Import the datetime tool to work with dates\n",
+        "from datetime import datetime\n",
+        "\n",
+        "# Ask the user for the event details\n",
+        "event_title = input(\"Enter event title: \").strip()\n",
+        "year = int(input(\"Enter year: \"))\n",
+        "month = int(input(\"Enter month: \"))\n",
+        "day = int(input(\"Enter day: \"))\n",
+        "\n",
+        "# Combine the numbers into a real calendar date\n",
+        "event_date = datetime(year, month, day)\n",
+        "\n",
+        "# Display the formatted event and date details\n",
+        "print(\"--- Formatted Output ---\")\n",
+        "print(f\"Event: {event_title.upper()}\")\n",
+        "print(f\"Date: {event_date.strftime('%B')} {event_date.day}, {event_date.year}\")\n",
+        "print(f\"Year: {event_date.year}\")\n",
+        "print(f\"Month: {event_date.strftime('%B')}\")\n",
+        "print(f\"Day: {event_date.day}\")\n",
+        "print(f\"Weekday: {event_date.strftime('%A')}\")\n"
+      ]
+    }
+  ]
+}
